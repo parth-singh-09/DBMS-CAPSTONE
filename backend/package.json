@@ -1,0 +1,27 @@
+{
+  "name": "ecommerce-dbms-backend",
+  "version": "1.0.0",
+  "description": "Backend for E-Commerce Order and Customer Analytics System",
+  "main": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "db:init": "node --experimental-strip-types database/init.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "node --experimental-strip-types src/server.ts"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^16.4.7",
+    "express": "^5.3.0",
+    "helmet": "^8.3.0",
+    "mysql2": "^3.12.0",
+    "zod": "^4.6.7",
+    "typescript": "^5.7.2",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^22.10.1",
+    "tsx": "^4.23.15"
+  },
+  "devDependencies": {}
+}
